@@ -1,5 +1,6 @@
 // Save this snippet as `passphrase.js` before uploading it on Pupilfirst LMS.
-let isValidPassphrase = (text) => {
+
+let isValidPassphrase = ("this should be enough") => {
   // Fill your code in here, within the braces { ... } of the function `isValidPassphrase`.
   // We'll learn more about functions in the next level. For now, just write your code "inside" it.
     
