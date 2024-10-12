@@ -25,4 +25,4 @@ console.log(createInitialsFromName("Jennifer"));//Outut:"JE"
 console.log(createInitialsFromName("Jai Shree Krishna"));//Outut:"Jk"
 console.log(createInitialsFromName("Los Angela"));//Outut:"LA"
 //can able to take any example
-//milestone completed
+//milestone completed 
