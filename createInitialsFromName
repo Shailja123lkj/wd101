@@ -1,0 +1,19 @@
+let name1="John";
+let name2="John david";
+let name3="John jr Rose";
+
+//one word First 2 char(condition 1,4)
+let firstTwoCharacters =name1.substring(0,2).toUpperCase();
+//in caps
+console.log(firstTwoCharacters);
+
+//two word the first letter of each of the words
+//(condition 2,4)
+let nameParts = name2.split(" ");
+let firstTwoLetters = nameParts[0][0].toUpperCase() + nameParts[1][0].toUpperCase();
+console.log(firstTwoLetters);
+
+//more words the starting letter of the first and the last word as initial
+//(condition 3,4)
+let startLetters= name3.split(" ")[0][0].toUpperCase() + name3.split(" ")[name3.split(" ").length - 1][0].toUpperCase();
+console.log(startLetters);
