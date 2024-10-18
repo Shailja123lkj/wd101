@@ -1,19 +1,26 @@
-let name1="John";
-let name2="John david";
-let name3="John jr Rose";
+let createInitialsFromName=(name) =>{
+                               // Split the name by spaces
+    let words = name.trim().split(" ");
 
-//one word First 2 char(condition 1,4)
-let firstTwoCharacters =name1.substring(0,2).toUpperCase();
-//in caps
-console.log(firstTwoCharacters);
+                              // If there's only one word, return the first two letters of the word in uppercase
+         if (words.length === 1) {
+                  return words[0].substring(0, 2).toUpperCase();
+               }
 
-//two word the first letter of each of the words
-//(condition 2,4)
-let nameParts = name2.split(" ");
-let firstTwoLetters = nameParts[0][0].toUpperCase() + nameParts[1][0].toUpperCase();
-console.log(firstTwoLetters);
+                            // If there are two words, return the first letter of each in uppercase
+         if (words.length === 2) {
+               return (words[0][0] + words[1][0]).toUpperCase();
+             }
 
-//more words the starting letter of the first and the last word as initial
-//(condition 3,4)
-let startLetters= name3.split(" ")[0][0].toUpperCase() + name3.split(" ")[name3.split(" ").length - 1][0].toUpperCase();
-console.log(startLetters);
+                   // If there are more than two words, return the first letter of the first word
+                      // and the first letter of the last word in uppercase
+     return (words[0][0] + words[words.length - 1][0]).toUpperCase();
+};
+let name = Ritti;
+printcreateInitialsFromName(name);
+let name = Joe Don;
+printcreateInitialsFromName(name);
+let name = joe leo Don;
+printcreateInitialsFromName(name);
+module.exports = createInitialsFromName;
+
